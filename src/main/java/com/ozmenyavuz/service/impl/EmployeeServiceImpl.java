@@ -6,14 +6,16 @@ import com.ozmenyavuz.exception.BaseException;
 import com.ozmenyavuz.exception.ErrorMessage;
 import com.ozmenyavuz.exception.MessageType;
 import com.ozmenyavuz.mapper.EmployeeMapper;
-import com.ozmenyavuz.model.Department;
 import com.ozmenyavuz.model.Employee;
 import com.ozmenyavuz.repository.EmployeeRepository;
 import com.ozmenyavuz.service.IEmployeeService;
+import org.springframework.context.annotation.ComponentScan;
+import org.springframework.stereotype.Component;
 import org.springframework.stereotype.Service;
 
 import java.util.Optional;
 
+@ComponentScan()
 @Service
 public class EmployeeServiceImpl implements IEmployeeService {
 

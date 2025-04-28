@@ -1,5 +1,6 @@
 package com.ozmenyavuz.model;
 
+import io.swagger.v3.oas.annotations.media.Schema;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
@@ -7,6 +8,7 @@ import lombok.NoArgsConstructor;
 @Data
 @AllArgsConstructor
 @NoArgsConstructor
+@Schema(description = "RootEntity wrapper for standard API responses")
 public class RootEntity<T> {
 
     private boolean result;
